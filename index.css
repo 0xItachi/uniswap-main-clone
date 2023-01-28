@@ -1,0 +1,353 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk';
+}
+body{
+    background-color: #191B1F;
+    color: white;
+}
+/* NavBar */
+.nav-bar{
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    padding-left:64px;
+    padding-top:16px;
+    display: flex;
+    background: rgba(25, 27, 31, 1);
+    z-index: 2;
+    /* opacity: 0.5; */
+}
+.nav-bar img{
+    height: 32px;
+    width: 32px;
+    margin-right: 10vw;
+    filter: invert(1)
+}
+.nav-anchor{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+.anc{
+    padding: 12px;
+    font-size: 1.1rem;
+    color: white;
+}
+.anc:hover{
+    cursor:pointer;
+    color: rgb(184, 184, 184);
+}
+.nav-anchor button{
+    height:50px;
+    width:100px;
+    border-radius: 7px;
+    background-color: rgb(231, 0, 116);
+    transition: all 0.5s ease;
+}
+.nav-anchor button:hover{
+    cursor: pointer;
+    height:53px;
+    width:104px;
+    background-color: rgb(223, 78, 150);
+}
+
+/* Content */
+.bg-main{
+    height: 600px;
+    /* overflow: hidden; */
+    /* position: relative; */
+}
+#img1-bg{
+    filter: invert(75%);
+    z-index:-1;
+    width: 100%;
+}
+#img2-bg{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-2;
+}
+.mainpg-1{
+    position: absolute;
+    top:70%;
+    left:5%;
+    color: white;
+    z-index: 0;
+    height: max-content;
+    width:700px;
+}
+#head1{
+    font-size: 50px;
+}
+#para1{
+    font-size: 20px;
+}
+
+/* stats */
+.stats-con{
+    height: max-content;
+    width: 70vw;
+    color: white;
+    margin-top:25vh;
+    margin-left:18vw;
+    display: flex;
+    justify-content: space-between;
+}
+.sp{
+    font-size:70px;
+    flex-basis: 10%;
+}
+.sm-cn{
+    font-size:0.9rem;
+}
+/* Ecosystem */
+.ecosystem-1{
+    color: white;
+    margin-top: 20vh;
+    margin-left:5vw;
+    display: flex;
+    padding:12px;
+    justify-content: space-between;
+}
+.left-eco-container{
+    flex-basis: 23%;
+}
+.right-eco-container{
+    flex-basis: 50%; 
+    position: relative;
+}
+
+.right-eco-container img{
+    height: 45vh;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(79, 78, 78, 0.75);
+}
+#right-img-ach{
+    top: 120px;
+    left:270px;
+    position: absolute;
+    height:100px;
+    width:95px;
+    border-radius: 30px;
+}
+.heading2-eco, .heading3-eco{
+    margin: 25px 0px;
+}
+.info2{
+    opacity: 0.6;
+    font-size: 17px;
+}
+.developers-main{
+    /* border:2px solid red; */
+    display: flex;
+    height: 450px;
+    margin: 2px 90px;
+    gap: 10px;
+}
+.left-side-developers{
+    /* border:1px solid red; */
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    /* width: 90%; */
+    gap: 30px;
+    border-radius: 30px;
+    flex-basis: 70%;
+}
+.left-upper{
+    flex-basis: 60%;
+    /* border: 1px solid red; */
+}
+.left-upper img{
+    position: absolute;
+    width: 100%;
+    height:50vh;
+    z-index: -1;
+    border-radius: 30px;
+    border: 1px solid grey
+}
+.right-side-developers{
+    border-radius: 30px;
+    border:2px solid grey;
+    flex-basis: 30%;
+    padding: 30px
+}
+.left-lower{
+    /* border: 2px solid red; */
+    flex-basis:30%;
+    border-radius: 30px;
+    display: flex;
+    gap:10px;
+}
+.developer-heading{
+    padding:22vh 20px 10px;
+}
+.developer-para{
+    /* border: 2px solid red; */
+    padding-left:20px;
+    width:53%;
+    font-size: 17px;
+}
+.developer-button{
+    margin-left:20px;
+    margin-top:15px;
+    height:35px;
+    width: 145px;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid grey;
+    border-radius: 15px;
+    color:white;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    /* background: linear-gradient(to right,blue, pink,black); */
+}
+.developer-button:hover{
+    height:35px;
+    width: 150px;
+    cursor: pointer;
+    background-color: black;
+}
+.btn-dev1:hover{
+    background-color: black;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn-dev1{
+    height:100%;
+    border-radius: 30px;
+    border:1px solid grey;
+    color:white;
+    font-weight: 700;
+    width:358px;
+    background-color: rgba(255, 255, 255, 0.05);
+    flex-basis: 50%;
+    transition: all 0.5s ease;
+}   
+#img-right{
+    height: 120px;
+    width: 120px;
+}
+.heading-right{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.para-right{
+    width:80%;
+    font-size: 18px;
+    margin-bottom:20px;
+}
+.right-btn{
+    height:35px;
+    width: 145px;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid grey;
+    border-radius: 10px;
+    color:white;
+    transition: all 0.5s ease;
+
+}
+.right-btn:hover{
+    height:40px;
+    width: 150px;
+    background-color: black;
+}
+.dev-head-main{
+    margin-left: 100px;
+    margin-bottom: 20px;
+    margin-top:50px;
+}
+.governance{
+    /* border:1px solid red; */
+    display: flex;
+    height: 400px;
+    margin: 2px 90px;
+    gap: 10px;
+}
+.gov-leftside{
+    position: relative;
+    /* border: 1px solid red; */
+    /* background: linear-gradient(to bottom, pink, purple); */
+}
+.gov-leftside img{
+    position: absolute;
+    z-index: -1;
+    height:100%;
+    width:100%;
+    border-radius: 20px;
+}
+.gov-rightside{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right1{
+    /* border: 1px solid red; */
+    flex-basis: 25%;
+    border-radius: 20px;
+    padding: 10px;
+    background-color:rgba(255, 255, 255, 0.05);
+    border: 1px solid grey;
+}
+
+.goverance-head{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.goverance-para{
+    padding-left: 30px;
+    padding-top: 10px;
+
+}
+.governance-button{
+    margin-left:30px;
+    margin-top:25vh;
+    padding:10px;
+    width:170px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid grey;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.governance-button:hover{
+    width:180px;
+    background-color: black;
+
+}
+.right-head-all{
+    padding-left:10px;
+}
+.right-gov-para{
+    padding:10px;
+}
+.gov-head-main{
+    margin-left: 100px;
+    margin-bottom: 20px;
+    margin-top:100px;
+}
+.footer{
+    margin-top:250px;
+    padding-left:90px;
+    display: flex;
+}
+.footer-pages{
+    height:40px;
+    width: 150px;
+    /* border:1px solid red; */
+}
+.footer-para{
+    margin-bottom:40px;
+    padding-left:90px;
+}
+.footer-mail{
+    margin-bottom:40px;
+}
+.media{
+    color:white;
+}
